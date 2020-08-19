@@ -1,107 +1,123 @@
-body {
-    /* background-color: #333333; */
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg-04.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-#navbar ul {
-    padding: 0;
-    list-style: none;
-    float: right;
-}
-
-#navbar li {
-    display: inline;
-}
-
-#navbar a {
-    color: turquoise;
-    position: relative;
-    width: 100%;
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: large;
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 20px;
-    padding-right: 25px;
-}
-
-#navbar a:hover {
-    font-size: larger;
-    background-color: grey;
-    transition: 0.2s;
-}
-
-.about-gallery {
-    display: flex;
-    height: 85vh;
-    width: 100%;
-}
-
-.gallery {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 15px;
-    color: white;
-}
-
-.about-me {
-    width: 50%;
-    height: 94%;
-    display: flex;
-    padding: 15px;
-    flex-direction: column;
-    /* background-image: url(/images/bg-04.jpg);
+    body {
+        /* background-color: #333333; */
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/images/bg-04.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    /* styling the nave bar */
+    
+    #navbar ul {
+        padding: 0;
+        list-style: none;
+        float: right;
+    }
+    
+    #navbar li {
+        display: inline;
+    }
+    
+    #navbar a {
+        color: turquoise;
+        position: relative;
+        width: 100%;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: large;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 20px;
+        padding-right: 25px;
+    }
+    
+    #navbar a:hover {
+        font-size: larger;
+        background-color: grey;
+        transition: 0.2s;
+    }
+    /* styling the whole section */
+    
+    .about-gallery {
+        display: flex;
+        height: 85vh;
+        width: 100%;
+    }
+    /* styling the gallery */
+    
+    .gallery {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15px;
+        color: white;
+    }
+    /* styling the about me page */
+    
+    .about-me {
+        width: 50%;
+        height: 94%;
+        display: flex;
+        padding: 15px;
+        flex-direction: column;
+        /* background-image: url(/images/bg-04.jpg);
     background-repeat: no-repeat;
     background-size: cover; */
-    font-size: 20px;
-    color: #fff;
-    text-indent: 2px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    line-height: 1.3em;
-}
-
-.about-me img {
-    height: 40%;
-    margin-top: 20px;
-}
-
-.gallery-highlight {
-    width: 100%;
-    height: 70%;
-}
-
-.pic-preview {
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
-    border: 2px solid #fff;
-}
-
-.pic-preview img {
-    height: 80px;
-    flex-grow: 1;
-    opacity: 0.6;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-img.room-active {
-    opacity: 1;
-}
-
-#main-footer {
-    background-color: darkslategray;
-    color: floralwhite;
-    width: 100%;
-    height: 20%;
-    text-align: center;
-    margin-top: 230px;
-    margin-bottom: 0px;
-}
+        font-size: 20px;
+        color: #fff;
+        text-indent: 2px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 1.3em;
+    }
+    
+    .about-me img {
+        height: 40%;
+        margin-top: 20px;
+    }
+    
+    .gallery-highlight {
+        width: 100%;
+        height: 70%;
+    }
+    
+    .pic-preview {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        border: 2px solid #fff;
+    }
+    
+    .pic-preview img {
+        height: 80px;
+        flex-grow: 1;
+        opacity: 0.6;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    img.room-active {
+        opacity: 1;
+    }
+    /*
+this is the footer styling */
+    
+    #main-footer {
+        background-color: darkslategray;
+        color: floralwhite;
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        margin-top: 230px;
+        margin-bottom: 0px;
+    }
+    
+    @media screen and (max-width: 800px) {
+        .about-gallery,
+        .about-me,
+        .gallery,
+        .pic-preview,
+        #main-footer {
+            width: 100%;
+        }
+    }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/about.css">
+    <title>About</title>
+</head>
+
+<body>
+    <!--navbar of the website-->
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="about.html" style="color:red;">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+        </div>
+    </nav>
+    <!-- this is a secton that contains 2 div. one for the about me div and the other for the gallery. -->
+    <section class="about-gallery">
+        <!-- about me section -->
+        <div class="about-me">
+
+            <p>
+                <b><h3>About Me</h3></b>
+                <h4>
+                    My name is Chioma Vivian Okeke.<br> I am a Nigerian. I graduated with a Bsc. in Computer Science at Nnamdi Azikiwe University, Awka, Anambra State. <br>My stack is Back-end development.
+                    <h3>Tech Skills</h3>
+                    <ul class="skills">
+                        <li> <abbr title="Hyper Text Markup Language"> HTML</abbr></li>
+                        <li> <abbr title="Cascading Style Sheet">CSS</abbr> </li>
+                        <li> <abbr title="Structured Query Language">SQL</abbr> </li>
+                        <li>Oracle</li>
+                    </ul>
+
+                </h4>
+            </p>
+        </div>
+        <!-- the gallery -->
+        <div class="gallery">
+            <h1>Gallery</h1>
+            <img src="/images/pic1-big.jpg" class="gallery-highlight">
+            <div class="pic-preview">
+                <img src="/images/pic1-small.jpg" class="room-active" alt="">
+                <!-- <img src="/images/pic2-small.jpg" alt="">
+                <img src="/images/pic3-small.jpg" alt=""> -->
+                <img src="/images/pic4-small.jpg" alt="">
+                <img src="/images/pic5-small.jpg" alt="">
+                <img src="/images/pic6-small.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <footer id="main-footer">Chioma Okeke 2020 &nbsp;&copy;</footer>
+    <!-- this is a function that inputs the smaller pictures into the larger screen -->
+    <script>
+        function imageGallery() {
+            const highlight = document.querySelector('.gallery-highlight');
+            const previews = document.querySelectorAll('.pic-preview img');
+
+            previews.forEach(preview => {
+                preview.addEventListener('click', function() {
+                    const smallSrc = this.src;
+                    const bigSrc = smallSrc.replace('small', 'big');
+                    highlight.src = bigSrc;
+                    previews.forEach(preview => preview.classList.remove('room-active'));
+                    preview.classList.add('room-active');
+
+                });
+            });
+        }
+
+        imageGallery();
+    </script>
+</body>
+
+</html>

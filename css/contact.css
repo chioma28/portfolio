@@ -81,7 +81,7 @@
     }
     
     button {
-        background-color: green;
+        background-color: rgb(4, 59, 54);
         color: whitesmoke;
         display: inline-block;
         margin: 0 auto;
@@ -94,14 +94,27 @@
     
     .twitter {
         margin: 0 10px;
+        color: white;
     }
     
     .instagram {
         margin: 0 10px;
+        color: white;
     }
     
     .linkedin {
         margin: 0 10px;
+        color: white;
+    }
+    
+    .github {
+        margin: 0 10px;
+        color: white;
+    }
+    
+    .mail {
+        margin: 0 10px;
+        color: white;
     }
     
     @media screen and (max-width: 800px) {
